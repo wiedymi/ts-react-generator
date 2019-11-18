@@ -2,7 +2,7 @@
   "name": "ts-react-generator",
   "displayName": "VSCode React Component Generator for TypeScript",
   "description": "Generates TypeScript React component files automatically",
-  "version": "0.0.5",
+  "version": "0.0.9",
   "publisher": "wiedymi",
   "author": {
     "name": "Wiedy Mi",

@@ -1,17 +1,17 @@
-# TypeScript React Component Generation Extension for VSCode
+# VSCode React Component Generator for TypeScript
 
 (**ts-react-generator**)
 
-[![Version](https://vsmarketplacebadge.apphb.com/version/abdullahceylan.vscode-react-component-generator.svg)](https://marketplace.visualstudio.com/items?itemName=wiedymi.ts-react-generator))
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/abdullahceylan.vscode-react-component-generator.svg)](https://marketplace.visualstudio.com/items?itemName=wiedymi.ts-react-generator)
-[![GitHub](https://flat.badgen.net/github/release/abdullahceylan/vscode-react-component-generator)](https://github.com/wiedymi/ts-react-generator/releases)
+[![Version](https://vsmarketplacebadge.apphb.com/version/wiedymi.ts-react-generator.svg)](https://marketplace.visualstudio.com/items?itemName=wiedymi.ts-react-generator)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/wiedymi.ts-react-generator.svg)](https://marketplace.visualstudio.com/items?itemName=wiedymi.ts-react-generator)
+[![GitHub](https://flat.badgen.net/github/release/wiedymi.ts-react-generator)](https://github.com/wiedymi/ts-react-generator/releases)
 
 ## Description
 
 The extension automatically creates folder for react component containing:
 
 - `index.ts`
-- `ComponentName.tsx`
+- `component.tsx`
 - `styles.ts` (for `styled`-component or `emotion` option)
 - `container.ts` (for Redux)
 

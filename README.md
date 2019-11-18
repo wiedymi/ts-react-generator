@@ -4,7 +4,7 @@
 
 [![Version](https://vsmarketplacebadge.apphb.com/version/wiedymi.ts-react-generator.svg)](https://marketplace.visualstudio.com/items?itemName=wiedymi.ts-react-generator)
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/wiedymi.ts-react-generator.svg)](https://marketplace.visualstudio.com/items?itemName=wiedymi.ts-react-generator)
-[![GitHub](https://flat.badgen.net/github/release/wiedymi.ts-react-generator)](https://github.com/wiedymi/ts-react-generator/releases)
+[![GitHub](https://flat.badgen.net/github/release/wiedymi/ts-react-generator)](https://github.com/wiedymi/ts-react-generator/releases)
 
 ## Description
 

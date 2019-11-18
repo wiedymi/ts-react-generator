@@ -1,5 +1,5 @@
 import { connect } from {quotes}react-redux{quotes}
-import component from './component.jsx'
+import Component from './component'
 
 const mapStateToProps = state => ({
   // blabla: state.blabla,
@@ -12,4 +12,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(component)
+)(Component)

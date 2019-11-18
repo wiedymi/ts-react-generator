@@ -1,0 +1,163 @@
+{
+  "name": "ts-react-generator",
+  "displayName": "VSCode React Component Generator for TypeScript",
+  "description": "Generates TypeScript React component files automatically",
+  "version": "0.0.3",
+  "publisher": "wiedymi",
+  "author": {
+    "name": "Wiedy Mi",
+    "email": "u.yakauleu@gmail.com"
+  },
+  "homepage": "https://github.com/wiedymi/ts-react-generator",
+  "galleryBanner": {
+    "color": "#0273D4",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wiedymi/ts-react-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wiedymi/ts-react-generator/issues",
+    "email": "u.yakauleu@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "1.40.1"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Other"
+  ],
+  "keywords": [
+    "vscode-react",
+    "react",
+    "react component",
+    "react generate component",
+    "redux",
+    "stateless",
+    "typescript"
+  ],
+  "activationEvents": [
+    "onCommand:extension.genReactContainerComponentFiles",
+    "onCommand:extension.genReactStatelessComponentFiles",
+    "onCommand:extension.genReactReduxContainerComponentFiles",
+    "onCommand:extension.genReactReduxStatelessComponentFiles"
+  ],
+  "main": "./out/src/extension",
+  "icon": "assets/images/icon.png",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "TS React Component Generator",
+      "properties": {
+        "TSReactComponentGenerator.global.quotes": {
+          "type": "string",
+          "enum": [
+            "single",
+            "double"
+          ],
+          "default": "single",
+          "description": "Options: `single` or `double` Result: `'`  or  `\"`"
+        },
+        "TSReactComponentGenerator.global.generateFolder": {
+          "type": "boolean",
+          "default": true,
+          "description": "Generate or not separate folder for newly created component"
+        },
+        "TSReactComponentGenerator.global.lifecycleType": {
+          "type": "string",
+          "default": "legacy",
+          "enum": [
+            "legacy",
+            "reactv16"
+          ],
+          "description": "The lifecycle type of generated component. `legacy` is contains componentWillReceiveProps, componentWillMount etc."
+        },
+        "TSReactComponentGenerator.mainFile.create": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether to generate component's main file or not. e.g.: component.tsx"
+        },
+        "TSReactComponentGenerator.styleFile.create": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether to generate component's style file or not. e.g.: styles.ts"
+        },
+        "TSReactComponentGenerator.styleFile.type": {
+          "type": "string",
+          "enum": [
+            "styled-components (.ts)",
+            "emotion (.ts)"
+          ],
+          "default": "styled-components (.ts)",
+          "description": "The type of stylesheet file to create"
+        },
+        "TSReactComponentGenerator.indexFile.create": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether to generate component's index file or not. e.g.: index.(extension)"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "extension.genReactContainerComponentFiles",
+        "title": "New Class component"
+      },
+      {
+        "command": "extension.genReactStatelessComponentFiles",
+        "title": "New Functional component"
+      },
+      {
+        "command": "extension.genReactReduxContainerComponentFiles",
+        "title": "New Class component with Redux"
+      },
+      {
+        "command": "extension.genReactReduxStatelessComponentFiles",
+        "title": "New Functional component with Redux"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.genReactContainerComponentFiles",
+          "group": "navigation"
+        },
+        {
+          "command": "extension.genReactStatelessComponentFiles",
+          "group": "navigation"
+        },
+        {
+          "command": "extension.genReactReduxContainerComponentFiles",
+          "group": "navigation"
+        },
+        {
+          "command": "extension.genReactReduxStatelessComponentFiles",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.21",
+    "eslint": "^4.11.0",
+    "@types/node": "^8.10.25",
+    "@types/mocha": "^2.2.42"
+  },
+  "dependencies": {
+    "change-case": "^3.0.2",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^0.30.0",
+    "rxjs": "^5.0.0-rc.1",
+    "lodash": "^4.17.11"
+  }
+}

@@ -1,0 +1,15 @@
+import { connect } from {quotes}react-redux{quotes}
+import component from './component.jsx'
+
+const mapStateToProps = state => ({
+  // blabla: state.blabla,
+})
+
+const mapDispatchToProps = dispatch => ({
+  // fnBlaBla: () => dispatch(action.name()),
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(component)

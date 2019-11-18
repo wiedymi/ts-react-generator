@@ -1,0 +1,18 @@
+import React, { ReactNode } from {quotes}react{quotes}
+import { Wrapper } from './styles'
+
+type Props = {
+  children: ReactNode
+}
+
+const {componentName} = (props: Props) => (
+  <Wrapper>
+    {componentName} content
+  </Wrapper>
+)
+
+{componentName}.defaultProps = {
+  // bla: 'test',
+}
+
+export default {componentName}
